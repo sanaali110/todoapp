@@ -1,0 +1,29 @@
+.input-list{
+    padding:11px;
+    border:1px solid black;
+    margin:10px;
+    max-width:350px;
+    width:100%;
+    border-radius:10px;
+}
+
+.submit{
+    background-color:rgb(9, 9, 88);
+    color:white;
+    padding:11px;
+    border-radius:10px;
+}
+ul{
+    padding-left:0;
+}
+li{
+    list-style: none;
+    padding-left:0;
+    display: block;
+    border-bottom:1px solid #ccc;
+    max-width:400px;
+    text-align: center;
+    margin:auto;
+    padding:10px;
+    background-color:#dedada;
+}
