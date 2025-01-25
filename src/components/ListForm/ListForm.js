@@ -12,9 +12,6 @@ const ListForm = ({ todos, updateTodos }) => {
         if (inputValue.trim() !== "") {
             updateTodos(inputValue)
         }
-        //...todos: The spread operator (...) creates a new 
-        // array that includes all the current items in the
-        //  todos array. It is used to ensure the previous items are preserved when adding a new item.
         setInputValue('')
     }
 
