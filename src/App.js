@@ -4,7 +4,8 @@ import List from './components/List';
 function App() {
   return (
     <div className="App">
-     <List/>
+      <h1></h1>
+      <List />
     </div>
   );
 }
