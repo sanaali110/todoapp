@@ -1,6 +1,9 @@
 import React, { useState } from "react"
 
-const ListForm = ({ todos, updateTodos }) => {
+/*
+* List form controls only the storage of new todo to be added to list
+*/
+const ListForm = ({ updateTodos }) => {
     const [inputValue, setInputValue] = useState('');
 
     const handleChange = (e) => {
@@ -14,7 +17,7 @@ const ListForm = ({ todos, updateTodos }) => {
         }
         setInputValue('')
     }
-
+    console.log('render list form')
     return (<form>
         <input className='input-list' type="text" value={inputValue} onChange={handleChange} placeholder='add item' />
         <button className="submit" onClick={handleClick}>Add list item</button>

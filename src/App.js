@@ -11,7 +11,8 @@ function App() {
   }
 
   const deleteTodo = (index) => {
-    /* ...todos: The spread operator (...) creates a new 
+    /* 
+     * ...todos: The spread operator (...) creates a new 
      * array that includes all the current items in the
      * todos array. It is used to ensure the previous items are preserved when adding a new item.
      */
@@ -19,6 +20,8 @@ function App() {
     newTodos.splice(index, 1);
     setTodos(newTodos);
   }
+
+  console.log('render app')
 
   return (
     <div className="App">

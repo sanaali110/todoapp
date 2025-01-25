@@ -1,6 +1,9 @@
 import React from 'react'
 import './List.css';
 
+/*
+* List will just render the list of todos
+*/
 function List({todos, deleteTodo}) {
   
   const handleDelete = (index) => {
@@ -11,6 +14,7 @@ function List({todos, deleteTodo}) {
     return <div>No items in the list</div>
   }
 
+  console.log('render list')
   return (
     <div>
       <h4>List items</h4>
