@@ -5,7 +5,8 @@ import './List.css';
 * List will just render the list of todos
 */
 function List({todos, deleteTodo}) {
-  
+
+  console.log('tods',todos)
   const handleDelete = (index) => {
     deleteTodo(index)
   }
@@ -20,7 +21,7 @@ function List({todos, deleteTodo}) {
       <h4>List items</h4>
       <ul>
         {todos.map((todo, index) => (
-          <li className='list-item' key={todo}>{todo}
+          <li className='list-item' key={todo.id}>{todo.value}
             <button className='delete-list' onClick={() => handleDelete(index)}>Delete</button>
           </li>
         ))}
