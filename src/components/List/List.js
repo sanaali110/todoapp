@@ -21,7 +21,7 @@ function List({todos, deleteTodo}) {
       <h4>List items</h4>
       <ul>
         {todos.map((todo, index) => (
-          <li className='list-item' key={todo.id}>{todo.value}
+          <li key={todo.id} className='list-item'>{todo.value}
             <button className='delete-list' onClick={() => handleDelete(index)}>Delete</button>
           </li>
         ))}
